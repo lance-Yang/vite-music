@@ -32,6 +32,7 @@
   margin: 0 auto;
   max-width: 1200px;
   width: 100%;
+  overflow: hidden;
 }
 
 .layout_footer {
@@ -40,7 +41,17 @@
 }
 .content_left {
   width: 74%;
+  position: relative;
 }
+
+.content_left .loading {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
 .content_right {
   width: 26%;
   padding-left: 15px;

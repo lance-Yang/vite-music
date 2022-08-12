@@ -17,12 +17,12 @@ const items: MenuProps['items'] = [
   },
   {
     label: '首页',
-    key: 'home',
+    key: '/home',
     icon: <HomeOutlined />
   },
   {
     label: '目录',
-    key: 'catalogue',
+    key: '/catalogue',
     icon: <UnorderedListOutlined />,
     children: [
       {
@@ -44,7 +44,7 @@ const items: MenuProps['items'] = [
   },
   {
     label: '关于',
-    key: 'heart',
+    key: '/about',
     icon: <HeartOutlined />
   },
 ]
