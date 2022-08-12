@@ -2,10 +2,7 @@ import { Suspense, lazy } from 'react'
 import { Outlet, Navigate } from 'react-router-dom'
 
 import Layout from '../components/Layout'
-import SpinLoading from '../components/Spinner'
-// import { lazyImport } from '../utils/lazyImport'
 
-// const { Home } = lazyImport(() => import('../home/index'), 'Home')
 import NotFound from '../components/404'
 const Home = lazy(() => import('../home'))
 const About = lazy(() => import('../about'))
@@ -22,10 +19,12 @@ export const publicRouters = [
   {
     path: '/',
     element: <LayoutComponent />,
+    auth: false,
     children: [
-      { path: '/home', element: <Home /> },
-      { path: '/about', element: <About /> },
-      { path: '*', element: <NotFound /> }
+      { path: '/home', element: <Home />, auth: false },
+      { path: '/about', element: <About />, auth: false },
+      { path: '/auth', element: <About />, auth: true },
+      { path: '*', element: <NotFound />, auth: false }
     ]
   }
 ]
