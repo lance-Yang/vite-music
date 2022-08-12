@@ -1,8 +1,8 @@
 import { useRoutes } from 'react-router-dom'
-import { publicRouters } from './asyncRouter'
+import { AsyncRouter } from './asyncRouter'
 
 export const AppRoutes = () => {
-  const element = useRoutes(publicRouters)
-  console.log(publicRouters,'publicRouters.......')
+  const element = useRoutes(AsyncRouter)
+  console.log(AsyncRouter,'AsyncRouter.......')
   return <>{element}</>
 }

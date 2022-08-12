@@ -15,7 +15,7 @@ const LayoutComponent = () => {
   )
 }
 
-export const publicRouters = [
+export const AsyncRouter = [
   {
     path: '/',
     element: <LayoutComponent />,
