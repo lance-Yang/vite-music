@@ -20,7 +20,7 @@ const Header = () => {
     <Row justify='space-between' align='middle'>
       <Col span={4}>Blog</Col>
       <Col span={20} style={{display:'flex',justifyContent:'flex-end'}}>
-        <Menu mode='horizontal' items={MenuProps} onClick={handleSwitch} />
+        {/* <Menu mode='horizontal' items={MenuProps} onClick={handleSwitch} /> */}
       </Col>
     </Row>
   )

@@ -6,7 +6,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,25 +19,29 @@
   width: 100%;
   min-height: 46px;
   height: 46px;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: rgb(248, 249, 251);
   padding: 0 2rem;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
   font-weight: 500;
+  border-bottom: 0.5px solid rgb(240, 240, 240);
 }
 .layout_content {
-  padding: 0 2rem;
-  height: calc(100% - 126px);
+  /* padding: 0 2rem; */
+  height: calc(100% - 136px);
   display: flex;
   flex: 1;
-  margin: 0 auto;
-  max-width: 1200px;
+  /* margin: 0 auto;
+  max-width: 1200px; */
   width: 100%;
   overflow: hidden;
+  border-bottom: 0.5px solid rgb(240, 240, 240);
 }
 
 .layout_footer {
-  height: 80px;
-  background-color: #fff;
+  height: 70px;
+  /* background-color: #fff; */
+  background-color: rgb(248, 249, 251);
 }
 .content_left {
   width: 74%;
