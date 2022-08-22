@@ -4,9 +4,7 @@ import React, { ReactNode } from 'react'
 import type { MenuProps } from 'antd';
 import { Outlet } from 'react-router-dom'
 const { Footer, Content } = Layout
-import { Card } from '../Card'
 import Header from './Header'
-import LayoutRight from './LayoutRight'
 import SpinLoading from '../Spinner'
 import './index.css'
 
@@ -17,9 +15,8 @@ type MenuItem = Required<MenuProps>['items'][number];
 const LayoutPage = ({ children }: { children?: ReactNode }) => {
 
 
-
   const items: MenuItem[] = [
-    { key: 'music' , icon: <HomeOutlined/> , label:'发现音乐' }
+    { key: 'music', icon: <HomeOutlined />, label: '发现音乐' }
   ];
 
   return (
@@ -37,7 +34,9 @@ const LayoutPage = ({ children }: { children?: ReactNode }) => {
           />
         </div>
         <div className='layout_right'>
-
+          <React.Suspense fallback={<SpinLoading />}>
+            <Outlet />
+          </React.Suspense>
         </div>
       </Content>
       <Footer className='layout_footer'>Footer</Footer>
